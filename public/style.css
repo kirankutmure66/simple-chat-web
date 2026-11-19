@@ -1,0 +1,137 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #222;
+}
+
+
+h2 {
+    color: #075e54;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+button {
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 16px;
+    transition: 0.3s;
+}
+
+form[action="/chats/new"] button {
+    background-color: #128c7e;
+    color: white;
+    font-weight: bold;
+}
+
+form[action="/chats/new"] button:hover {
+    background-color: #075e54;
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #d1d5db;
+    margin: 22px 0;
+}
+
+
+.chatdiv {
+    background-color: white;
+    display: inline-block;
+    width: 320px;
+    max-width: 100%;
+    padding: 18px;
+    margin: 10px 15px 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    vertical-align: top;
+    transition: 0.3s;
+}
+
+.chatdiv:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+.chatdiv > p {
+    font-size: 15px;
+    color: #555;
+    margin: 8px 0 14px;
+}
+
+
+.msgdiv {
+    background-color: #dcf8c6;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 12px 0;
+}
+
+.msgdiv p {
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+
+.msgdiv form:first-of-type button {
+    background-color: #128c7e;
+    color: white;
+}
+
+.msgdiv form:first-of-type button:hover {
+    background-color: #075e54;
+}
+
+
+.msgdiv form:last-of-type button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.msgdiv form:last-of-type button:hover {
+    background-color: #b02a37;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+    margin-top: 8px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #128c7e;
+    box-shadow: 0 0 4px rgba(18, 140, 126, 0.3);
+}
+
+
+body > form button,
+body > button {
+    background-color: #128c7e;
+    color: white;
+}
+
